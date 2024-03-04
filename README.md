@@ -1,6 +1,9 @@
 # Allegro Nuklear Visual Style Editor (ANVSE)  
 Visually edit Nuklear GUI style files.  
 
+Windows 8.1+ x86-64 and Ubuntu 20.04+ x86-64  
+Requires Allegro Allegro V5.2.9.0 and Nuklear V4.12.0 to build.  
+
 ## About  
 The Nuklear GUI, Visual Styles Editor is a fast and easy way to create or modify style tables for the Nuklear GUI system.  
 Style files can be loaded, modified and then saved. Just copy and paste the created style table into your project source code.  
