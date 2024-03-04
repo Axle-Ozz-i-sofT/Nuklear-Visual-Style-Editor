@@ -1,7 +1,7 @@
-# Allegro Nuklear Visual Style Editor (ANVSE)
-Visually edit Nuklear GUI style files.
+# Allegro Nuklear Visual Style Editor (ANVSE)  
+Visually edit Nuklear GUI style files.  
 
-## About
+## About  
 The Nuklear GUI, Visual Styles Editor is a fast and easy way to create or modify style tables for the Nuklear GUI system.  
 Style files can be loaded, modified and then saved. Just copy and paste the created style table into your project source code.  
 The output file is a correctly formatted Nuklear style.c table.  
@@ -20,14 +20,22 @@ Hopefully developers that make use of Nuklear GUI can find this useful.
 
 The visual editor is based upon the Allegro 5 graphics library and Nuklear and is available for Windows and Ubuntu x86-64.Allegro, Nuklear Visual Style Editor (ANVSE).Allegro Visual Style Editor (std) source is licenced under MIT0 and free to modify and use.  
 
-## More information
-I had just began familiarizing my self with Allegro 5 and Nuklear when I made this. I quickly discovered that there wasn't any easy way to edit the 28 style colors in the style.c file and thought 28 x 4(rgba) colors to manually edit was a no go for me lol
-Creating ANVSE turned out to be a good way to become familiar with Nuklear :)
-Some of the code can be improved and I may well do so in the future, but for now the application does what I require.
-I made this for my self but have put it up on GitHub so others can make use of it or even find ideas from the code.
-I used the MIT-0 licence so you can do what you like with it. That being said an attribute is always welcome ;)
+## More information  
+I had just began familiarizing my self with Allegro 5 and Nuklear when I made this. I quickly discovered that there wasn't any easy way to edit the 28 style colors in the style.c file and thought 28 x 4(rgba) colors to manually edit was a no go for me lol  
+Creating ANVSE turned out to be a good way to become familiar with Nuklear :)  
+Some of the code can be improved and I may well do so in the future, but for now the application does what I require.  
+I made this for my self but have put it up on GitHub so others can make use of it or even find ideas from the code.  
+I used the MIT-0 licence so you can do what you like with it. That being said an attribute is always welcome ;)  
 
-I am looking at implimenting some addition in the future such as more options to test alpha transparency on the backgrounds.
-I am also looking at pulling the current operating system theme colors into a style file. If you have ever tried to do this you will know that it is fraught with inconsistancies and gotchas, so don't hold your breath too long :)
+I am looking at implimenting some additions in the future such as more options to test alpha transparency on the backgrounds.  
+I am also looking at pulling the current operating system theme colors into a style file. If you have ever tried to do this you will know that it is fraught with inconsistancies and gotchas, so don't hold your breath too long :)  
 
-## Some picks to muse at
+## Some pics to muse at  
+**Adding some green to the defualt style with alpha and background.**
+![Adding some green to the defualt style with alpha and background.](/img_preview/NK_NVSE_1.png)
+![Adding some green to the defualt style with alpha and background.](/img_preview/NK_NVSE_2.png)
+![Adding some green to the defualt style with alpha and background.](/img_preview/NK_NVSE_3.png)
+
+**Default theme higlighting margin issue I am still trying to track dowm. The margin doesn't imact the applications function.**
+![Adding some green to the defualt style with alpha and background.](/img_preview/NK_Windows.png)
+![Adding some green to the defualt style with alpha and background.](/img_preview/NK_Ubuntu.png)
