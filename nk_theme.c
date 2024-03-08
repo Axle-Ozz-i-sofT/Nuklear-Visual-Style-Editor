@@ -624,6 +624,7 @@ nk_theme(struct nk_context *ctx,
                 if (nk_button_label(ctx, "Cancel"))
                     {
                     exit_check = nk_false;
+                    *quit_app = 0;
                     nk_popup_close(ctx);
                     }
                 nk_popup_end(ctx);
