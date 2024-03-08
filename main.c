@@ -69,6 +69,16 @@
 // Ubuntu has left widget alignment/margin problem.
 // NK_COLOR_SLIDER_CURSOR_ACTIVE not working linux?
 //
+// Window Close dialog does not return on Cancel!! [Done]
+//
+//-lmingw32
+//
+// Fix NK shutdown tasks!!! [Done]
+    //nk_allegro5_del_image(logo);[Done]
+    //nk_allegro5_del_image(backgrounds);[Done]
+    //al_destroy_event_queue(event_queue);[Done]
+
+    //nk_allegro5_shutdown();[Done]
 //------------------------------------------------------------------------------
 
 #include <stdio.h>
@@ -298,7 +308,7 @@ int main(void)
         nk_input_end(ctx);
 
         // GUI
-        //nk_theme(ctx, display, table, logo, &img_select, nk_bk_color, font, font_l, &alpha_flag, &alpha_all, &quit_app);
+        nk_theme(ctx, display, table, logo, &img_select, nk_bk_color, font, font_l, &alpha_flag, &alpha_all, &quit_app);
 
         // Draw
 
@@ -334,13 +344,21 @@ int main(void)
 
         }
 
-    // check cleanup tasks!!
+    // Do cleanup tasks.
     al_shutdown_native_dialog_addon();
     nk_allegro5_font_del(font);
+    nk_allegro5_font_del(font_l);
+    nk_allegro5_del_image(logo);
     nk_allegro5_shutdown();
-    al_destroy_display(display);  // Is the order correct?
-    //nk_allegro5_del_image(logo);
+
+    al_destroy_bitmap(icon);
+    al_destroy_bitmap(background[0]);
+    al_destroy_bitmap(background[1]);
+    al_destroy_bitmap(background[2]);
     al_destroy_event_queue(event_queue);
+    al_destroy_display(display);
+    al_uninstall_keyboard();
+    al_uninstall_mouse();
 
     return 0;
     }
