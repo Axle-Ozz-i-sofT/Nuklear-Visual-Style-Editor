@@ -127,9 +127,9 @@
 #define NK_INCLUDE_DEFAULT_ALLOCATOR
 #define NK_IMPLEMENTATION
 #define NK_ALLEGRO5_IMPLEMENTATION
-#include <nuklear.h>
-#include <demo/allegro5/nuklear_allegro5.h>
-#include <demo/common/style.c>
+#include "vendor/nuklear/nuklear.h"
+#include "vendor/nuklear/demo/allegro5/nuklear_allegro5.h"
+#include "vendor/nuklear/demo/common/style.c"
 
 #define UNUSED(a) (void)a
 
